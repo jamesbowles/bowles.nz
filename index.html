@@ -23,14 +23,15 @@
     bowles.nz
     <script type="text/javascript">
       const themes = [
-        {backgroundColor: '#663399', color: '#CDE6F5', textShadow: '0.5rem 0.5rem #8DA7BE' },
-        {backgroundColor: '#009FB7', color: '#F4F4F8', textShadow: '0.5rem 0.5rem #FED766' }
-
+        {backgroundColor: '#663399', color: '#CDE6F5', textShadow: '#8DA7BE'},
+        {backgroundColor: '#009FB7', color: '#F4F4F8', textShadow: '#FED766'},
+        {backgroundColor: '#8DB580', color: '#DDD1C7', textShadow: '#4B4A67'},
+        {backgroundColor: '#A9FBD7', color: '#FFFFFF', textShadow: '#938BA1'}
       ];
       const theme = themes[Math.floor(Math.random() * Math.floor(themes.length))]
       document.body.style.backgroundColor = theme.backgroundColor;
       document.body.style.color = theme.color;
-      document.body.style.textShadow = theme.textShadow;
+      document.body.style.textShadow = `0.5rem 0.5rem ${theme.textShadow}`;
     </script>
   </body>
 </html>
